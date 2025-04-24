@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleExclamation, faFire, faStar, } from "@fortawesome/free-solid-svg-icons";
 import "./MovieCard.style.css";
 import { useMovieGenreQuery } from "../../hooks/useMovieGenre";
-const MovieCard = ({ movie }) => {
 
+
+const MovieCard = ({ movie }) => {
+    const DEFAULT_IMAGE = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdag_u_IjKGPpfGRlBphyjKrDWQi35BSZdzQ&s";
     const { data: genreData } = useMovieGenreQuery()
     const navigate = useNavigate()
 
@@ -27,13 +29,13 @@ const MovieCard = ({ movie }) => {
         <div
             onClick={handleClick}
             style={{
-                backgroundImage:
-                    "url(" +
-                    `https://www.themoviedb.org/t/p/w600_and_h900_bestv2${movie.poster_path}` +
-                    ")",
+                backgroundImage: `url(${movie.poster_path
+                    ? `https://media.themoviedb.org/t/p/w600_and_h900_bestv2${movie.poster_path}`
+                    : DEFAULT_IMAGE})`,
             }}
             className="movie-card"
         >
+
             <div className="overlay">
                 <h1>{movie.title}</h1>
                 {showGenre(movie.genre_ids).map((id) => (

@@ -20,13 +20,12 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    margin-left: 7rem;
-    padding-top: 7rem;
+    padding: 2rem;
+    z-index: 2;
+    position: relative;
+    color: white;
 }
 
-/* .banner-text-area * {
-    z-index: 2;
-  } */
 
 @media (max-width: 1024px) {
     .banner-text-area {
@@ -58,7 +57,7 @@
     }
 
     .banner-text-area * {
-        opacity: 0.7;
+        opacity: 1;
     }
 
     .banner-text-area-title {

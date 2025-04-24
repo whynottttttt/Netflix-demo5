@@ -54,7 +54,7 @@ const AppLayout = () => {
                   borderColor: '#444'
                 }}
               />
-              <Button variant="outline-danger">Search</Button>
+              <Button variant="outline-danger" type="submit">Search</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
