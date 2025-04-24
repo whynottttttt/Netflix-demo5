@@ -1,0 +1,33 @@
+.homepage-container {
+    padding: 40px 0;
+    background-color: black;
+    min-height: calc(100vh - 56px);
+}
+
+.hero-section {
+    padding: 60px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+@media (max-width: 1024px) {
+    .homepage-wrap {
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 464px) {
+    .homepage-wrap {
+        padding-bottom: 4rem;
+    }
+}

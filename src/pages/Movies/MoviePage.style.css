@@ -1,0 +1,31 @@
+.movie-page {
+    padding: 40px 0;
+    background-color: black;
+    min-height: calc(100vh - 56px);
+}
+
+.page-title {
+    color: white;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.movie-card {
+    background-color: #181818;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card .card-body {
+    background-color: #181818;
+}
+
+.movie-card .card-title {
+    font-size: 1rem;
+    margin-bottom: 0;
+}

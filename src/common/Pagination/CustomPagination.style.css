@@ -1,0 +1,78 @@
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 5px;
+}
+
+.custom-pagination button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.custom-pagination button:hover {
+    background-color: #f0f0f0;
+    border-color: #aaa;
+}
+
+.custom-pagination button.active {
+    background-color: black;
+    color: red;
+    border-color: black;
+}
+
+.custom-pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* 태블릿 이하 화면 */
+@media (max-width: 1024px) {
+    .custom-pagination {
+        gap: 6px;
+        padding: 1.5rem 0;
+    }
+
+    .custom-pagination button {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        min-width: 30px;
+    }
+}
+
+/* 모바일 화면 */
+@media (max-width: 464px) {
+    .custom-pagination {
+        gap: 4px;
+        padding: 1rem 0;
+    }
+
+    .custom-pagination button {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+        min-width: 26px;
+    }
+}
+
+@media (max-width: 400px) {
+    .custom-pagination {
+        gap: 2px;
+        padding: 0.8rem 0;
+    }
+
+    .custom-pagination button {
+        font-size: 0.65rem;
+        padding: 2px 5px;
+        min-width: 22px;
+    }
+}

@@ -1,0 +1,64 @@
+.carousel-container {
+    overflow: hidden;
+    height: 440px;
+}
+
+@media (max-width:480px) {
+    .carousel-container {
+        height: 330px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+.upcoming-carousel-container {
+    overflow: hidden;
+    height: 440px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.upcoming-movie-slider {
+    padding: 0 5px;
+}
+
+.toprated-carousel-container {
+    overflow: hidden;
+    height: 440px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.toprated-movie-slider {
+    padding: 0 5px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin-top: 1rem;
+    }
+
+    .container h3 {
+        margin-bottom: 0.8rem;
+    }
+
+    .carousel-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 464px) {
+    .container {
+        margin-top: 1.2rem;
+    }
+
+    .container h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .carousel-container {
+        height: 180px;
+    }
+}
